@@ -1,34 +1,77 @@
+const config = require('./data/config')
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: config.defaultTitle,
+    description: config.defaultDescription,
+    author: config.author,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-graphql',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+        },
+        fetchOptions: {},
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-nprogress',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        color: config.themeColor,
+        showSpinner: false,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './static/favicon/favicon-512.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: config.defaultTitle,
+        short_name: 'starter',
+        start_url: '/',
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'minimal-ui',
+        icon: './static/favicon/favicon-512.png',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 }

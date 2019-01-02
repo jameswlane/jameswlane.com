@@ -1,0 +1,35 @@
+module.exports = {
+  defaultTitle: 'James W Lane',
+  logo: 'https://jameswlane.com/favicon/favicon-512.png',
+  author: 'James W Lane',
+  url: 'https://jameswlane.com',
+  legalName: 'James W Lane',
+  defaultDescription: 'I’m James and I’m a Backend & Devops engineer!',
+  socialLinks: {
+    twitter: 'http://www.twitter.com/jameswlane',
+    github: 'https://github.com/jameswlane',
+    linkedin: 'https://www.linkedin.com/in/jameswlane.com/',
+    instagram: 'https://instagram.com/jameswlane.com',
+    youtube: 'https://www.youtube.com/user/jameswlane.com',
+    google: 'https://plus.google.com/u/0/jameswlane.com',
+  },
+  googleAnalyticsID: '',
+  themeColor: '#6b63ff',
+  backgroundColor: '#6b63ff',
+  social: {
+    facebook: 'appId',
+    twitter: '@jameswlane',
+  },
+  address: {
+    city: 'City',
+    region: 'Region',
+    country: 'Country',
+    zipCode: 'ZipCode',
+  },
+  contact: {
+    email: 'email',
+    phone: 'phone number',
+  },
+  foundingDate: '2018',
+  recaptcha_key: '',
+}

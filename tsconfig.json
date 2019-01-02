@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "lib",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "Components": [
+        "src/components"
+      ],
+      "Common": [
+        "src/components/common"
+      ],
+      "Static": [
+        "static/"
+      ],
+      "Theme": [
+        "src/components/theme"
+      ],
+      "Data": [
+        "data/config"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
+}
