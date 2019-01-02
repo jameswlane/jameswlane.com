@@ -1,7 +1,17 @@
 {
-  "version": 2,
-  "name": "gatsby",
+  "alias": [
+    "jameswlane.com",
+    "www.jameswlane.com"
+  ],
   "builds": [
-    { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} }
-  ]
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "name": "jameswlane",
+  "version": 2
 }
