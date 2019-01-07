@@ -17,7 +17,6 @@
     "@types/react-helmet": "5.0.8",
     "@types/recompose": "0.30.2",
     "@types/yup": "0.26.4",
-    "babel-plugin-styled-components": "1.10.0",
     "formik": "1.4.1",
     "gatsby": "2.0.85",
     "gatsby-image": "2.0.25",
