@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jameswlane.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "jameswlane.com",
+  "version": "0.0.0",
+  "author": "James W. Lane <james.w.lane@mac.com>",
   "dependencies": {
     "@emotion/core": "10.0.6",
     "@emotion/styled": "10.0.6",
@@ -75,9 +75,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jameswlane/jameswlane.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jameswlane/jameswlane.com"
   }
 }
