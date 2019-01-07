@@ -1,5 +1,6 @@
 import * as React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+// @ts-ignore
 import { Header } from 'Theme'
 import { Container, Button } from 'Common'
 import dev from 'Static/illustrations/dev.svg'

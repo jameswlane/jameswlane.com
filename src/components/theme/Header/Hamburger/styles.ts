@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const Wrapper = styled.div`
 	z-index: 5;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 		display: block;
 	}
 
-	${({ sidebar }) =>
+	${({ sidebar }: any) =>
   sidebar &&
   `
 			right: 18%;
@@ -43,21 +43,21 @@ export const Bar = styled.div`
 		width: 1.6rem;
 	}
 
-	${({ top, sidebar }) =>
+	${({ top, sidebar }: any) =>
   top &&
   sidebar &&
   `
 		transform: translateY(8px) rotate(-135deg);
 	`}
 
-	${({ mid, sidebar }) =>
+	${({ mid, sidebar }: any) =>
   mid &&
   sidebar &&
   `
 			transform: scale(0);
 	`}
 
-	${({ bottom, sidebar }) =>
+	${({ bottom, sidebar }: any) =>
   bottom &&
   sidebar &&
   `

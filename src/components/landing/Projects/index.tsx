@@ -12,7 +12,7 @@ export const Projects = () => (
 				github {
 					repositoryOwner(login: "jameswlane") {
 						repositories(
-							first: 8
+							first: 6
 							orderBy: { field: STARGAZERS, direction: DESC }
 						) {
 							edges {
@@ -42,7 +42,7 @@ export const Projects = () => (
       <Wrapper as={Container} id="projects">
         <h2>Projects</h2>
         <Grid>
-          {edges.map(({ node }) => (
+          {edges.map(({ node }: any) => (
             <Item
               key={node.id}
               as="a"
@@ -57,11 +57,11 @@ export const Projects = () => (
                 </Content>
                 <Stats>
                   <div>
-                    <img src={starIcon} alt="stars" />
+                    <img src={starIcon} alt="stars"/>
                     <span>{node.stargazers.totalCount}</span>
                   </div>
                   <div>
-                    <img src={forkIcon} alt="forks" />
+                    <img src={forkIcon} alt="forks"/>
                     <span>{node.forkCount}</span>
                   </div>
                 </Stats>
