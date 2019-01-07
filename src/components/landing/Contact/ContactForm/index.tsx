@@ -4,7 +4,7 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import { Button, Input } from 'Common'
-import { recaptcha_key } from 'Data'
+import data from 'Data'
 import { Error, Center, InputField } from './styles'
 
 const ContactForm = ({
@@ -13,7 +13,7 @@ const ContactForm = ({
                        values,
                        errors,
                        touched,
-                     }) => (
+                     }: any) => (
   <Form
     name="portfolio-dev"
     method="post"
@@ -31,7 +31,7 @@ const ContactForm = ({
         placeholder="Full name*"
         error={touched.name && errors.name}
       />
-      <ErrorMessage component={Error} name="name" />
+      <ErrorMessage component={Error} name="name"/>
     </InputField>
     <InputField>
       <Input
@@ -44,7 +44,7 @@ const ContactForm = ({
         placeholder="Email*"
         error={touched.email && errors.email}
       />
-      <ErrorMessage component={Error} name="email" />
+      <ErrorMessage component={Error} name="email"/>
     </InputField>
     <InputField>
       <Input
@@ -58,17 +58,17 @@ const ContactForm = ({
         placeholder="Message*"
         error={touched.message && errors.message}
       />
-      <ErrorMessage component={Error} name="message" />
+      <ErrorMessage component={Error} name="message"/>
     </InputField>
     {values.name && values.email && values.message && (
       <InputField>
         <FastField
           component={Recaptcha}
-          sitekey={recaptcha_key}
+          sitekey={data.recaptcha_key}
           name="recaptcha"
-          onChange={value => setFieldValue('recaptcha', value)}
+          onChange={(value: any) => setFieldValue('recaptcha', value)}
         />
-        <ErrorMessage component={Error} name="recaptcha" />
+        <ErrorMessage component={Error} name="recaptcha"/>
       </InputField>
     )}
     {values.success && (
@@ -109,14 +109,14 @@ const enhance = compose(
       }),
     handleSubmit: async (
       { name, email, message, recaptcha },
-      { setSubmitting, resetForm, setFieldValue }
+      { setSubmitting, resetForm, setFieldValue },
     ) => {
       try {
-        const encode = data => {
+        const encode = (data: any) => {
           return Object.keys(data)
             .map(
               key =>
-                `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+                `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
             )
             .join('&')
         }
@@ -140,7 +140,7 @@ const enhance = compose(
         alert('Something went wrong, please try again!') // eslint-disable-line
       }
     },
-  })
+  }),
 )
 
 export default enhance(ContactForm)

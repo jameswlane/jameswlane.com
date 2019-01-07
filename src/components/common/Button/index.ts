@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const Button = styled.button`
 	cursor: pointer;
@@ -23,7 +23,7 @@ export const Button = styled.button`
 		background: gray;
 	}
 
-	${({ secondary }) =>
+	${({ secondary }: any) =>
   secondary &&
   `
 		background: #001F3F;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const Wrapper = styled.div`
 	a {
@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 		text-decoration: none;
 	}
 
-	${({ desktop }) =>
+	${({ desktop }: any) =>
   desktop
     ? `
 			@media (max-width: 960px) {

@@ -2,6 +2,14 @@ const config = require('./data/config')
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://jameswlane.com/',
+    keywords: [
+      'Software Engineer',
+      'Web Developer',
+      'Consultant',
+      'Freelancer',
+    ],
+
     title: config.defaultTitle,
     description: config.defaultDescription,
     author: config.author,
@@ -9,9 +17,40 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: 'blog',
+      },
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
+          },
+          // {
+          //   resolve: `gatsby-remark-prismjs`,
+          //   options: {
+          //     classPrefix: "language-",
+          //     inlineCodeMarker: null,
+          //     aliases: {},
+          //     showLineNumbers: false,
+          //     noInlineHighlight: false,
+          //   },
+          // },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-source-graphql',
       options: {
@@ -36,6 +75,12 @@ module.exports = {
       options: {
         trackingId: config.googleAnalyticsID,
         head: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
       },
     },
     // {

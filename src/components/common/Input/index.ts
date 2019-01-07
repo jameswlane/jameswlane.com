@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 export const Input = styled.input`
 	width: 100%;
@@ -9,7 +9,7 @@ export const Input = styled.input`
 	margin-bottom: 0.5rem;
 	transition: 0.3s;
 
-	${({ error }) =>
+	${({ error }: any) =>
   error &&
   `
 		border-color: #ff4136;
