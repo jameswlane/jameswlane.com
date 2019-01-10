@@ -7,7 +7,7 @@ const IndexPage = () => (
     <SEO/>
     <Intro/>
     <Projects/>
-    <Skills/>
+    {/*<Skills/>*/}
     {/*<Contact/>*/}
   </Layout>
 )
