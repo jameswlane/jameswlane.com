@@ -20,6 +20,14 @@ export const Footer = () => (
             target="_blank"
           >
 						Smakosh
+					</a>{' '}
+					extended by{' '}
+          <a
+            href="https://jameswlane"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+						James W. Lane
 					</a>
 				</span>
       </Details>
