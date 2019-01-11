@@ -27,14 +27,16 @@ export const Button = styled(Box)({
 
 Button.defaultProps = {
   as: 'button',
+  cursor: 'pointer',
   fontSize: 'inherit',
   fontWeight: 'bold',
-  m: 0,
-  px: 3,
-  py: 2,
+  m: 0, // margin
+  px: 3, // padding-left and padding-right
+  py: 2, // padding-top and padding-bottom
+  padding: '0.7rem 2.5rem',
   color: 'white',
   bg: 'blue',
   border: 0,
-  borderRadius: 4,
+  borderRadius: '3px',
 }
 

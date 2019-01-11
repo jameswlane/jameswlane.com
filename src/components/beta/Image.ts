@@ -15,6 +15,6 @@ export const Image = styled(Box)({
 
 Image.defaultProps = {
   as: 'img',
-  m: 0
+  m: 0 // margin
 }
 

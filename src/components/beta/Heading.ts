@@ -9,7 +9,7 @@ export const Heading = styled(Text)(
 
 Heading.defaultProps = {
   as: 'h2',
-  m: 0,
+  m: 0, // margin
   fontSize: 4,
   fontWeight: 'bold',
 }
