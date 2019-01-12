@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container } from 'Common'
-import { Card } from '../../beta'
+import { Container, Card } from 'Common'
 import starIcon from 'Static/icons/star.svg'
 import forkIcon from 'Static/icons/fork.svg'
 import { Wrapper, Grid, Item, Content, Stats } from './styles'

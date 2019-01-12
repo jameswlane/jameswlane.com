@@ -1,8 +1,0 @@
-export { Box } from './Box'
-export { Button } from './Button'
-export { Card } from './Card'
-export { Flex } from './Flex'
-export { Heading } from './Heading'
-export { Image } from './Image'
-export { Link } from './Link'
-export { Text } from './Text'
