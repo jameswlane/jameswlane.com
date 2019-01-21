@@ -64,7 +64,7 @@
     "now-build": "npm run build"
   },
   "devDependencies": {
-    "@types/jest": "23.3.12",
+    "@types/jest": "23.3.13",
     "babel-eslint": "10.0.1",
     "eslint": "5.12.0",
     "eslint-config-airbnb": "17.1.0",
