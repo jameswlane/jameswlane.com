@@ -17,7 +17,7 @@
     "@types/react-helmet": "5.0.8",
     "@types/recompose": "0.30.5",
     "@types/styled-system": "3.2.2",
-    "@types/yup": "0.26.9",
+    "@types/yup": "0.26.10",
     "formik": "1.5.1",
     "gatsby": "2.1.18",
     "gatsby-image": "2.0.30",
