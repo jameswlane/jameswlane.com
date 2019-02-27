@@ -44,7 +44,7 @@
     "react-google-recaptcha": "1.0.5",
     "react-helmet": "5.2.0",
     "recompose": "0.30.0",
-    "styled-system": "3.2.1",
+    "styled-system": "4.0.1",
     "yup": "0.26.10"
   },
   "keywords": [
