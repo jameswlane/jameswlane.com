@@ -8,7 +8,7 @@
     "@emotion/core": "10.0.7",
     "@emotion/styled": "10.0.7",
     "@mdx-js/loader": "0.18.2",
-    "@mdx-js/mdx": "0.18.1",
+    "@mdx-js/mdx": "0.18.2",
     "@mdx-js/tag": "0.18.0",
     "@types/node": "10.12.18",
     "@types/react": "16.8.5",
