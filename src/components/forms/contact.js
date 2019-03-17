@@ -131,7 +131,7 @@ function ContactForm() {
       body: JSON.stringify(getFormValues(form)),
     }).then(
       () => {
-        navigate('/contact/success')
+        // navigate('/contact/success')
       },
       error => {
         /* eslint no-alert:0 */
