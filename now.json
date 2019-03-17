@@ -16,8 +16,21 @@
       "config": {
         "distDir": "public"
       }
+    },
+    {
+      "src": "/lambdas/contact",
+      "use": "@now/node"
     }
   ],
+  "env": {
+    "SENDGRID_API_KEY": "@sendgrid_api_key"
+  },
   "name": "jameswlane.com",
+  "routes": [
+    {
+      "src": "/api/contact",
+      "dest": "/lambdas/contact"
+    }
+  ],
   "version": 2
 }
