@@ -18,7 +18,7 @@
       }
     },
     {
-      "src": "/lambdas/contact",
+      "src": "/lambdas/contact/index.js",
       "use": "@now/node"
     }
   ],
@@ -29,7 +29,7 @@
   "routes": [
     {
       "src": "/api/contact",
-      "dest": "/lambdas/contact"
+      "dest": "/lambdas/contact/index.js"
     }
   ],
   "version": 2
