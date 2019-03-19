@@ -37,7 +37,7 @@
     "gatsby-remark-images": "3.0.10",
     "gatsby-source-filesystem": "2.0.27",
     "gatsby-source-graphql": "2.0.15",
-    "gatsby-transformer-remark": "2.3.5",
+    "gatsby-transformer-remark": "2.3.6",
     "gatsby-transformer-sharp": "2.1.17",
     "micro": "9.3.3",
     "react": "16.8.4",
