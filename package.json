@@ -20,7 +20,7 @@
     "@types/styled-system": "3.2.2",
     "@types/yup": "0.26.12",
     "formik": "1.5.1",
-    "gatsby": "2.1.39",
+    "gatsby": "2.2.1",
     "gatsby-image": "2.0.34",
     "gatsby-mdx": "0.4.3",
     "gatsby-plugin-canonical-urls": "2.0.12",
