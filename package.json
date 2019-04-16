@@ -17,7 +17,7 @@
     "@types/react-google-recaptcha": "0.10.0",
     "@types/react-helmet": "5.0.8",
     "@types/recompose": "0.30.6",
-    "@types/styled-system": "3.2.2",
+    "@types/styled-system": "4.1.0",
     "@types/yup": "0.26.12",
     "formik": "1.5.2",
     "gatsby": "2.3.23",
@@ -46,7 +46,7 @@
     "react-google-recaptcha": "1.0.5",
     "react-helmet": "5.2.0",
     "recompose": "0.30.0",
-    "styled-system": "4.0.8",
+    "styled-system": "4.1.0",
     "yup": "0.27.0",
     "gatsby-link": "latest"
   },
