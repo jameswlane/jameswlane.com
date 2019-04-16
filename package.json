@@ -16,7 +16,7 @@
     "@types/react-dom": "16.8.4",
     "@types/react-google-recaptcha": "0.10.0",
     "@types/react-helmet": "5.0.8",
-    "@types/recompose": "0.30.5",
+    "@types/recompose": "0.30.6",
     "@types/styled-system": "3.2.2",
     "@types/yup": "0.26.12",
     "formik": "1.5.2",
