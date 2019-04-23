@@ -21,7 +21,7 @@
     "@types/yup": "0.26.12",
     "formik": "1.5.2",
     "gatsby": "2.3.27",
-    "gatsby-image": "2.0.39",
+    "gatsby-image": "2.0.40",
     "gatsby-mdx": "0.4.5",
     "gatsby-plugin-canonical-urls": "2.0.12",
     "gatsby-plugin-emotion": "4.0.6",
