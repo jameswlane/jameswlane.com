@@ -17,7 +17,7 @@
     "@types/react-google-recaptcha": "0.10.0",
     "@types/react-helmet": "5.0.8",
     "@types/recompose": "0.30.6",
-    "@types/styled-system": "4.2.0",
+    "@types/styled-system": "4.2.1",
     "@types/yup": "0.26.13",
     "formik": "1.5.7",
     "gatsby": "2.6.0",
