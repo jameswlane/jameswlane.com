@@ -36,7 +36,7 @@
     "gatsby-plugin-typescript": "2.0.15",
     "gatsby-remark-images": "3.0.14",
     "gatsby-source-filesystem": "2.0.39",
-    "gatsby-source-graphql": "2.0.18",
+    "gatsby-source-graphql": "2.0.19",
     "gatsby-transformer-remark": "2.3.12",
     "gatsby-transformer-sharp": "2.1.21",
     "micro": "9.3.4",
