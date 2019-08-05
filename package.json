@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "author": "James W. Lane <james.w.lane@mac.com>",
   "dependencies": {
-    "@emotion/core": "10.0.14",
+    "@emotion/core": "10.0.15",
     "@emotion/styled": "10.0.14",
     "@mdx-js/loader": "1.1.0",
     "@mdx-js/mdx": "1.1.0",
